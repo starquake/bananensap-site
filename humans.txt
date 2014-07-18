@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Creator: Jan Visser
+    Site: http://www.bananensap.nl
+    Twitter: bananensap
+    Location: The Netherlands
+
+# THANKS
+
+    HTML5 Boilerplate: For making a great boilerplate! Check it out: http://html5boilerplate.com/
+    JetBrains: For creating the best HTML5/CSS3/JavaScript IDE there is1 (WebStorm)
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
