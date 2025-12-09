@@ -2,12 +2,15 @@ body {
     background: #000;
     margin: 0;
     padding: 0;
+    /* Prevent page from scrolling on mobile */
+    overflow: hidden;
 }
 .container {
     background: #000;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    /* Use a fixed viewport-height grid: content + socials */
+    display: grid;
+    grid-template-rows: 1fr auto;
+    height: 100svh;
     width: 100%;
 }
 
@@ -15,29 +18,24 @@ body {
 }
 
 .item.logo {
-    /* Center the logo nicely */
+    /* Center the logo */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem 1rem;
+    /* Allow this area to shrink within the grid without causing overflow */
+    min-height: 0;
 }
 .item.logo img {
     max-width: min(800px, 90vw);
-    max-height: 70vh;
+    /* Fit the image within the available logo area */
+    max-height: 100%;
     width: auto;
     height: auto;
 }
 
-.item.footer {
-    color: rgba(255,255,255,0.6);
-    text-align: center;
-    font-size: 0.85rem;
-    padding: 0.5rem 1rem 0;
-}
-
 .item.socials {
-    /* Stick to the bottom as a strip */
-    margin-top: auto;
+    /* Bottom strip in the second grid row */
     padding: 0.75rem 1rem;
     border-top: 1px solid rgba(255,255,255,0.12);
     display: flex;
